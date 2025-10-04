@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -7,3 +7,13 @@ int main()
     int dslc = 0, cap_tnq = 0;
     // (end_var)
 }
+    //ENTRADA DE DADOS
+    vlr_gsl = 6.50;     //REAL
+    cst_abs = 78.00;    //REAL
+    qtd_gsl = 3.00;     //LITRO
+    vlc_med = 80.00;    //KM/H
+    auto = 20.00;       //KM/L
+    temp = 1.5;         //HORAS
+    qtd_tnq = 3.00;     //LITRO
+    dslc = 210;         //KM
+    cap_tnq = 15;       //LITRO
