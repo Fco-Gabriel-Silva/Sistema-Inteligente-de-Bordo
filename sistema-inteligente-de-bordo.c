@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h> 
 
 int main()
 {
@@ -30,7 +31,14 @@ int main()
     qtd_gsl = qtd_tnq - cap_tnq;        //LITRO
     
     cst_abs = qtd_gsl * vlr_gsl;        //REAL
+    
 
     //RESULTADOS
+    printf("\n A velocidade média do veículo é: %.2f KM/H", vlc_med2);
+    printf("\n A autonomia do veículo é: %.2f KM/L", atnm2);
+    printf("\n A capacidade do tanque é: %d LITRO(S)",cap_tnq);
+    printf("\n A quantidade de gasolina complementar é: %.2f LITRO(S)", fabs(qtd_gsl));
+    printf("\n O custo de abastecimento é: R$ %.2f ", fabs(cst_abs));
+    
     
 }
