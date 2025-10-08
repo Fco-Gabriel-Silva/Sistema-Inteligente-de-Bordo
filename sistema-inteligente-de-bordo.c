@@ -9,23 +9,39 @@ int main()
     // (end_var)
 
     //ENTRADA DE DADOS
-    vlr_gsl = 6.50;     //REAL
-    cst_abs = 78.00;    //REAL
-    qtd_gsl = 3.00;     //LITRO
-    vlc_med1 = 80.00;    //KM/H
-    atnm1 = 20.00;       //KM/L
-    temp = 1.5;         //HORAS
-    qtd_tnq = 3.00;     //LITRO
-    dslc = 210;         //KM
-    cap_tnq = 15;       //LITRO
+    vlc_med1 = 80.00;                 //KH
+    atnm1 = 20.00;                    //KM/L
+    //qtd_gsl = 12.00;                  //LITRO
+    //cst_abs = 78.00;                  //REAL
+    //cap_tnq = 15;                     //LITRO
+    printf("Valor da gasolina: ");
+    scanf("%f", &vlr_gsl);              //REAL
+    //vlr_gsl = 6.50;                   //REAL
+    printf("Quantidade de gasolina no tanque: ");
+    scanf("%f", &qtd_tnq);              //LITRO
+    //qtd_tnq = 3.00;                   //LITRO
+    printf("Tempo de chegada: ");
+    scanf("%f", &temp);                 //HORAS
+    //temp = 1.5;                       //HORAS
+    printf("Distância até o destino: ");
+    scanf("%d", &dslc);                 //KM
+    //dslc = 210;                       //KM
 
     //REGRA DE NEGOCIO
     vlc_med2 = dslc / temp;             //KM/H
+    if (vlc_med1 > vlc_med2) {
+    vlc_med1 = vlc_med1 - vlc_med2;     //KM/H
+    } else { 
     vlc_med1 = vlc_med2 - vlc_med1;     //KM/H
+    } 
     vlc_med1 = vlc_med1 / 5;            //Número qualquer
     
     atnm2 = vlc_med1 / 2;               //KM/L
+    if (atnm1 > atnm2) {
     atnm2 = atnm1 - atnm2;              //KM/L
+    } else {
+    atnm2 = atnm2 - atnm1;  
+    }
     
     cap_tnq = dslc / atnm2;             //LITRO
     qtd_gsl = qtd_tnq - cap_tnq;        //LITRO
