@@ -1,18 +1,26 @@
 # 🚗 Sistema Inteligente de Bordo
 
-O **Sistema Inteligente de Bordo** trata-se de um sistema de planejamento de viagem, utilizando a linguagem **C**. Este programa simula os cálculos de um computador de bordo.
+O **Sistema Inteligente de Bordo** trata-se de um sistema de planejamento de viagem, utilizando a linguagem **C**. Este programa simula os cálculos de um computador de bordo. 
 
----
+--- 
 
 ## 🔤 Objetivo de cada Variável
 
-- **Var1:**
-- **Var2:**
-- **Var3:**
-- **Var4:**
-- **Var5:**
-- **Var6:**
-- **Var7:**
+- **vlr_cmb =** Valor do combustível.
+- **cst_abs =** Custo do abastecimento.
+- **qtd_gsl =** Quantidade de gasolina.
+- **vlc_med =** Velocidade média padrão.
+- **vlc_med1 =** Velocidade média real.
+- **vlc_med2 =** Diferença entre **vlc_med** e **vlc_med1**.
+- **atnm_calc =** Cálculo de autonomia.
+- **atnm =** Autonomia padrão.
+- **atnm1 =** Autonomia perdida. 
+- **atnm2 =** Diferença entre **atnm** e **atnm1**.
+- **temp =** Tempo para chegar ao destino.
+- **qtd_tnq =** Quantidade de gasolina no tanque.
+- **dslc =** Deslocamento.
+- **cmb_ncs =** Combustível necessário para chegar ao destino.
+- **cmbs =** Tipo de combustível.
 
 
 ## ✅ Funcionalidades
@@ -21,7 +29,11 @@ O **Sistema Inteligente de Bordo** trata-se de um sistema de planejamento de via
 
 - **Autonomia do Veículo:** Mostra a autonomia estimada, considerando variações na velocidade durante o percurso.
 
-- **Capacidade do Tanque:** Informa a capacidade total do tanque de combustível.
+- **Tipo de Combustível:** Especifíca qual combustível escolher entre as opções: gasolina comum, álcool e gasolina aditivada.
+
+- **Combustível Necessário** Mostra a quantidade mínima de combustível para chegar até o destino.
+
+- **Preço do Combustível** Exibe o valor do litro do combustível.
 
 - **Gasolina Complementar:** Indica a quantidade de combustível necessária para completar o tanque.
 
@@ -48,8 +60,8 @@ O **Sistema Inteligente de Bordo** trata-se de um sistema de planejamento de via
 
 ## 👨‍💻 Criadores
 
-- Gabriel Silva
-- Jaqueline Freitas
-- Lorena Moura
-- Ryan Teles
+- Francisco Gabriel da Silva Costa
+- Jaqueline Freitas de Brito Coelho
+- Lorena Késily Rodrigues Moura
+- Ryan Teles da Silva Cunha
  
