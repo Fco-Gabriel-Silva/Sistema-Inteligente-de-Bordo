@@ -5,8 +5,9 @@
 int main()
 {
     // VARIAVEIS (start_var)
-    float vlr_cmb = 0, cst_abs = 0, qtd_gsl = 0, vlc_med = 0, atnm_calc = 0, vlc_med1 = 0, vlc_med2 = 0, atnm = 0, atnm1 = 0, atnm2 = 0, temp = 0, qtd_tnq = 0, valor_combustivel = 0;
-    int dslc = 0, cmb_ncs = 0, combustivel = 0;
+    float vlr_cmb = 0, cst_abs = 0, qtd_gsl = 0, vlc_med = 0, atnm_calc = 0, vlc_med1 = 0, vlc_med2 = 0, atnm = 0, atnm1 = 0, atnm2 = 0, temp = 0, qtd_tnq = 0;
+    int dslc = 0, cmb_ncs = 0, cmbs = 0;
+    char comb[50]; 
     // (end_var)
 
     //ENTRADA DE DADOS
@@ -17,19 +18,25 @@ int main()
     printf("\n[2] álcool");
     printf("\n[3] gasolina aditivada");
     printf("\nTipo de combustivel: ");
-    scanf("%d", &combustivel);          //Número qualquer
+    scanf("%d", &cmbs);          //Número qualquer
     
-    switch (combustivel) {
-        case 1:                     
-        vlr_cmb = 6.50;                  //REAL 
+    switch (cmbs) {
+    case 1:                     
+        vlr_cmb = 6.50;                  
+        strcpy(comb, "Gasolina comum");
         break;
-        case 2: 
-        vlr_cmb = 6.00;                  //REAL
+    case 2: 
+        vlr_cmb = 6.00;                  
+        strcpy(comb, "Álcool");
         break;
-        case 3:
-        vlr_cmb = 7.00;                 //REAL
+    case 3:
+        vlr_cmb = 7.00;                 
+        strcpy(comb, "Gasolina aditivada");
         break;
-    }
+    default:
+        strcpy(comb, "Combustível desconhecido");
+        break;
+}
     
     printf("Tempo de chegada (Horas): ");       
     scanf("%f", &temp);                  //HORAS
@@ -74,6 +81,7 @@ int main()
     printf("\n A velocidade média do veículo é: %.2f KM/H", vlc_med1);
     printf("\n A autonomia do veículo é: %.2f KM/L", atnm1);
     printf("\n O combustivel necessário para chegar ao destino é: %d LITRO(S)",cmb_ncs); 
+    printf("\n O tipo de combustível do veículo é: %s", comb);
     printf("\n O preço do combustivel é: R$ %.2f", vlr_cmb);
     printf("\n A quantidade de gasolina complementar é: %.2f LITRO(S)", fabs(qtd_gsl));
     printf("\n O custo de abastecimento é: R$ %.2f ", fabs(cst_abs));
