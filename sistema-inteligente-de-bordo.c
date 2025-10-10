@@ -7,34 +7,34 @@ int main()
     // VARIAVEIS (start_var)
     float vlr_cmb = 0, cst_abs = 0, qtd_cmb = 0, vlc_pdr = 0, vlc_real = 0, atn_pdr = 0, atn_cal = 0, temp = 0, qtd_tnq = 0, dif_vlc = 0;
     int dslc = 0, cmb_ncs = 0, cmbs = 0;
-    char comb[50]; 
+    char tip_cmb[50]; 
     // (end_var)
 
     // ENTRADA DE DADOS
     vlc_pdr = 80.00;                    // KM/H 
     atn_pdr = 20.00;                    // KM/L
     
-    printf("\n[1] gasolina comum");
-    printf("\n[2] álcool");
-    printf("\n[3] gasolina aditivada");
+    printf("\n[1] Gasolina comum");
+    printf("\n[2] Álcool");
+    printf("\n[3] Gasolina aditivada");
     printf("\nTipo de combustivel: ");
     scanf("%d", &cmbs);                 // Número qualquer
     
     switch (cmbs) {
         case 1:                     
             vlr_cmb = 6.50;                  
-            strcpy(comb, "Gasolina comum");
+            strcpy(tip_cmb, "Gasolina comum");
             break;
         case 2: 
             vlr_cmb = 6.00;                  
-            strcpy(comb, "Álcool");
+            strcpy(tip_cmb, "Álcool");
             break;
         case 3:
             vlr_cmb = 7.00;                 
-            strcpy(comb, "Gasolina aditivada");
+            strcpy(tip_cmb, "Gasolina aditivada");
             break;
         default:
-            strcpy(comb, "Combustível desconhecido");
+            strcpy(tip_cmb, "Combustível desconhecido");
             break;
     }
     
@@ -84,7 +84,7 @@ int main()
     printf("\n A velocidade média do veículo é: %.2f KM/H", vlc_real);
     printf("\n A autonomia do veículo é: %.2f KM/L", atn_cal);
     printf("\n O combustivel necessário para chegar ao destino é: %d LITRO(S)", cmb_ncs); 
-    printf("\n O tipo de combustível do veículo é: %s", comb);
+    printf("\n O tipo de combustível do veículo é: %s", tip_cmb);
     printf("\n O preço do combustivel é: R$ %.2f", vlr_cmb);
     printf("\n A quantidade de gasolina complementar é: %.2f LITRO(S)", fabs(qtd_cmb));
     printf("\n O custo de abastecimento é: R$ %.2f ", fabs(cst_abs));
