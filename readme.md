@@ -9,12 +9,14 @@ Desenvolvido por alunos do **Centro Universitário Ateneu (UniAteneu)**, o siste
 
 - **vlr_cmb =** Valor do combustível.
 - **cst_abs =** Custo do abastecimento.
-- **qtd_cmb =** Quantidade de gasolina.
-- **vlc_pdr =** Velocidade média padrão.
-- **vlc_real =** Velocidade média real.
-- **dif_vlc =** Diferença entre **vlc_pdr** e **vlc_real**.
-- **atn_cal =** Cálculo de autonomia.
-- **atn_pdr =** Autonomia padrão.
+- **qtd_gsl =** Quantidade de gasolina.
+- **vlc_med =** Velocidade média padrão.
+- **vlc_med1 =** Velocidade média real.
+- **vlc_med2 =** Diferença entre **vlc_med** e **vlc_med1**.
+- **atnm_calc =** Cálculo de autonomia.
+- **atnm =** Autonomia padrão.
+- **atnm1 =** Autonomia perdida. 
+- **atnm2 =** Diferença entre **atnm** e **atnm1**.
 - **temp =** Tempo para chegar ao destino.
 - **qtd_tnq =** Quantidade de gasolina no tanque.
 - **dslc =** Deslocamento.
@@ -52,6 +54,8 @@ Desenvolvido por alunos do **Centro Universitário Ateneu (UniAteneu)**, o siste
 -   **Editor:** VS Code
 -   **Organização:** Trello => [Acesse o quadro aqui!](https://trello.com/invite/b/68d994babe2cf930e99cfd65/ATTIf87c2e41f94611d45617091cc37c6e3e237112AB/sistema-inteligente-de-bordo)
 -   **Versionamento:** GitHub
+-   **Organograma e Fluxograma:** LucidChart => [Acesse o organograma e fluxograma aqui!](https://lucid.app/lucidchart/022deabf-b873-40d8-8e80-56c1b663d1fb/edit?view_items=iTncHUM%2BgHeogoMQlyZxxBC2Bxg%3D&page=0_0&invitationId=inv_aeddef56-760a-489a-85d0-01af3a4fe55f)
+
 
 
 ## ▶️ Como Executar o Projeto (Manual)
